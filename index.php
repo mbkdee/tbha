@@ -28,7 +28,7 @@ function Forward($chat_id,$from_id,$massege_id){
     bot('ForwardMessage',[
     'chat_id'=>$chat_id,
     'from_chat_id'=>$from_id,
-    'message_id'=>$massege_id
+    'message_id'=>$massege_i
     ]);
 }
 function SendMessage($chat_id, $text, $mode = "html", $reply = null, $keyboard = null){
