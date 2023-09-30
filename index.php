@@ -72,6 +72,8 @@ $step = $users['step'];
 $All = $users['userlist'];
 $gp = $users['userlist']['gp'];
 $pv = $users['userlist']['pv'];
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
 $mid = $update->message->reply_to_message->message_id;
 $rep = $update->message->reply_to_message;
 $newchatmemberid = $update->message->new_chat_member->id;
