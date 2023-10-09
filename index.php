@@ -137,6 +137,30 @@ sendmessage($chat_id,"@Source_Home","html",$message_id);
 elseif($text == 'آمار' and $from_id == $admin){
   $ppv = count($users['userlist']['pv']);
   $ggp = count($users['userlist']['gp']);
+    <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Choose an option:';
+
+$keyboard = array(
+    'inline_keyboard' => array(
+        array(
+            array('text' => 'Option 1', 'callback_data' => 'option1'),
+            array('text' => 'Option 2', 'callback_data' => 'option2')
+        )
+    )
+);
+
+$url = "https://api.telegram.org/bot$token/sendMessage";
+$data = array(
+    'chat_id' => $chat_id,
+    'text' => $message,
+    'reply_markup' => json_encode($keyboard)
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
 SendMessage($chat_id,"💫Statistics Tapchi Bot💫
 
 ⛈Gap: $ggp
