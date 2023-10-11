@@ -10,7 +10,6 @@ function bot($method,$datas=[]){
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RTURNTRANSFER,true);
     curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
-    if (mysqli_num_rows($result) == 1) {
     $_SESSION['username'] = $username;
      header('location: dashboard.php');
     $res = curl_exec($ch);
