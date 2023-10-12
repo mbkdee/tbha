@@ -11,7 +11,6 @@ function bot($method,$datas=[]){
     curl_setopt($ch,CURLOPT_RTURNTRANSFER,true);
     curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
     $_SESSION['username'] = $username;
-     header('location: dashboard.php');
     $res = curl_exec($ch);
     if(curl_error($ch)){
         var_dump(curl_error($ch));
