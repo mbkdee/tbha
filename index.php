@@ -9,7 +9,6 @@ function bot($method,$datas=[]){
     $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RTURNTRANSFER,true);
-    curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
     $_SESSION['username'] = $username;
     $res = curl_exec($ch);
     if(curl_error($ch)){
