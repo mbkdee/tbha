@@ -50,7 +50,6 @@ $poll = [
 file_get_contents("https://api.telegram.org/bot$token/sendPoll?" . http_build_query($poll));
 ?>
 
-  'parse_mode'=>$mode,
   'reply_to_message_id'=>$reply,
   'reply_markup'=>$keyboard
   ]);
