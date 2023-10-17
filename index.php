@@ -19,7 +19,6 @@ function bot($method,$datas=[]){
 }function EditMsg($chatid, $msgid, $text, $keyboard = null){
     bot('EditMessageText', [
     'chat_id'=>$chatid,
-    'text'=>$text,
     'reply_markup'=>$keyboard
     ]);
 }
