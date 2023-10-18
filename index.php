@@ -32,6 +32,21 @@ function Forward($chat_id,$from_id,$massege_id){
 function SendMessage($chat_id, $text, $mode = "html", $reply = null, $keyboard = null){
   bot('SendMessage',[
   'chat_id'=>$chat_id,
+      <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Choose an option:';
+
+$keyboard = [
+    'inline_keyboard' => [
+        [['text' => 'Option 1', 'callback_data' => 'option1'],
+         ['text' => 'Option 2', 'callback_data' => 'option2']]
+    ]
+];
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
+?>
+
   'text'=>$text,
       <?php
 $token = 'YOUR_BOT_TOKEN';
