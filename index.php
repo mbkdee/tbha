@@ -27,7 +27,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 }function EditMsg($chatid, $msgid, $text, $keyboard = null){
     bot('EditMessageText', [
     'chat_id'=>$chatid,
-    'reply_markup'=>$keyboard
     ]);
 }
 function Forward($chat_id,$from_id,$massege_id){
