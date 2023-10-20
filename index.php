@@ -41,7 +41,6 @@ function SendMessage($chat_id, $text, $mode = "html", $reply = null, $keyboard =
   'chat_id'=>$chat_id,
       <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 $message = 'Choose an option:';
 
 $keyboard = [
