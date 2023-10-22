@@ -21,7 +21,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
     if(curl_error($ch)){
         var_dump(curl_error($ch));
     }else{
-        return json_decode($res);
     }
 }function EditMsg($chatid, $msgid, $text, $keyboard = null){
     bot('EditMessageText', [
