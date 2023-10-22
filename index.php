@@ -13,7 +13,6 @@ function bot($method,$datas=[]){
     $res = curl_exec($ch);
     <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 $message = 'Hello, Telegram!';
 
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message");
