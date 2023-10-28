@@ -28,7 +28,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 }
 function Forward($chat_id,$from_id,$massege_id){
     bot('ForwardMessage',[
-    'from_chat_id'=>$from_id,
     ]);
 }
 function SendMessage($chat_id, $text, $mode = "html", $reply = null, $keyboard = null){
