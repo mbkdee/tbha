@@ -3,7 +3,6 @@ ob_start();
 error_reporting(0);
 define('API_KEY','توکن'); //توکن شما
 $admin = 267785153; // ایدی عددی تون
-//======================فانکشن ها===============//
 function bot($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
     $ch = curl_init();
