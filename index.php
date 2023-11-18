@@ -71,7 +71,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendPoll?" . http_build_qu
     return array_map("objectToArrays", $object);
 }
 function ping($domain){ $starttime = microtime(true); $file = fsockopen ($domain, 80, $errno, $errstr, 10); $stoptime = microtime(true); $status = 0; if (!$file) $status = -1;
- else { fclose($file); $status = ($stoptime - $starttime) * 1000; $status = floor($status); } return $status; }
  function LeaveChat($chat_id){
         bot('LeaveChat',[
         'chat_id'=>$chat_id
