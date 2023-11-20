@@ -111,7 +111,6 @@ sendmessage($chat_id, "📄 Help Tapchi Bot
 -آمار
 
 ✏️ Send Pv
--ارسال پیوی
 
 📚 For Pv
 -فروارد پیوی
