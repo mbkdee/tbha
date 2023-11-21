@@ -84,7 +84,6 @@ $text = $message->text;
 $message_id = $update->message->message_id;
 $from_id = $message->from->id;
 $name = $message->from->first_name;
-$lastname = $message->from->last_name;
 $username = $message->from->username;
 $type = $message->chat->type;
 $users = json_decode(file_get_contents("data/data.json"),true);
