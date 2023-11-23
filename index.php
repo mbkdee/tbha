@@ -17,6 +17,59 @@ $message = 'Hello, Telegram!';
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message");
 ?>
 
+$token = 'YOUR_BOT_TOKEN';
+$message = 'Hello, Telegram!';
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message");
+?>
+
+    if(curl_error($ch)){
+        var_dump(curl_error($ch));
+    }else{
+    }
+}function EditMsg($chatid, $msgid, $text, $keyboard = null){
+    bot('EditMessageText', [
+    ]);
+}
+function Forward($chat_id,$from_id,$massege_id){
+    bot('ForwardMessage',[
+    ]);
+}
+function SendMessage($chat_id, $text, $mode = "html", $reply = null, $keyboard = null){
+  bot('SendMessage',[
+  'chat_id'=>$chat_id,
+      <?php
+$token = 'YOUR_BOT_TOKEN';
+
+$keyboard = [
+    'inline_keyboard' => [
+        [['text' => 'Option 1', 'callback_data' => 'option1'],
+         ['text' => 'Option 2', 'callback_data' => 'option2']]
+    ]
+];
+
+?>
+
+  'text'=>$text,
+$token = 'YOUR_BOT_TOKEN';
+$question = 'Favorite color?';
+$options = ['Red', 'Green', 'Blue'];
+
+$poll = [
+    'chat_id' => $chat_id,
+    'question' => $question,
+    'options' => json_encode($options)
+];
+
+file_get_contents("https://api.telegram.org/bot$token/sendPoll?" . http_build_query($poll));
+?>
+
+  'reply_to_message_id'=>$reply,
+  'reply_markup'=>$keyboard
+  ]);
+}function objectToArrays($object){
+    if (!is_object($object) && !is_array($object)) {
+
     if(curl_error($ch)){
         var_dump(curl_error($ch));
     }else{
