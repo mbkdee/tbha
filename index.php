@@ -35,7 +35,7 @@ function Forward($chat_id,$from_id,$massege_id){
     bot('ForwardMessage',[
     ]);
 }
-function SendMessage($chat_id, $text, $mode = "html", $reply = null, $keyboard = null){
+function SendMessage($chat_id, $text, $mode = "html", $ = null, $keyboard = null){
   bot('SendMessage',[
   'chat_id'=>$chat_id,
       <?php
