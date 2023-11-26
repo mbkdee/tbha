@@ -37,8 +37,6 @@ function Forward($chat_id,$from_id,$massege_id){
 }
 function SendMessage($chat_id, $text, $mode = "html", $ = null, $keyboard = null){
   bot('SendMessage',[
-  'chat_id'=>$chat_id,
-      <?php
 $token = 'YOUR_BOT_TOKEN';
 
 $keyboard = [
