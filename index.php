@@ -63,7 +63,7 @@ try {
 ?>
 
   'text'=>$text,
-$token = 'YOUR_BOT_TOKEN';
+$token = 'YOUR_BOT_TOKEN'
 $question = 'Favorite color?';
 $poll = [
     'chat_id' => $chat_id,
